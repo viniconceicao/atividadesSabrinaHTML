@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 09</title>
+</head>
+<body>
+    <h1> Questão 09</h1>
+
+    <input type="text" name="entrada" id="entrada">
+    <input type="button" name="botao" id="botao" value="ALTERAR">
+
+    <script>
+        let body = document.querySelector('body');
+        let botao = document.querySelector('#botao');
+        botao.addEventListener('click', mudarCor);
+
+        function mudarCor() {
+        let entrada = document.querySelector('#entrada').value;
+        body.style.background = `${entrada}`;
+        }
+
+    </script>
+
+<style>
+    #area {
+        color: black;
+        width: 1000px;
+        height: 900px;
+    }
+</style>
+</body>
+</html>

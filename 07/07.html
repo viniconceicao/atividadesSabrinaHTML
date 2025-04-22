@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 07</title>
+</head>
+<body>
+    <h1> Questão 07</h1>
+
+    <input type="text" name="entrada" id="entrada">
+    <input type="button" name="butao" id="butao" value="ENVIAR">
+
+
+    <script>
+        let butao_interacao = document.querySelector('#butao');
+        butao.addEventListener('click', clicar)
+
+        function clicar() {
+            let texto = document.createElement('p');
+            let p = document.querySelector('#entrada').value;
+            texto.innerText = `${p}`;
+            document.body.appendChild(texto);
+        }
+    </script>
+</body>
+</html>

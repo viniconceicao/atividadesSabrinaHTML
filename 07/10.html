@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    <h1> Questão 10</h1>
+
+    <input type="text" name="name" id="name">
+    <input type="email" name="email" id="email">
+    <input type="text" name="text" id="text">
+    <input type="button" name="botao" id="botao" value="ENVIAR">
+
+    <script>
+        let botao_interacao = document.querySelector('#botao');
+        botao.addEventListener('click', clicar)
+
+        function clicar() {
+        let texto_nome = document.createElement('p');
+        let texto_email = document.createElement('p');
+        let texto_texto = document.createElement('p');
+        let name = document.querySelector('#name').value;
+        let email = document.querySelector('#email').value;
+        let text = document.querySelector('#text').value;
+        texto_nome.innerText = ` NOME: ${name}`;
+        texto_email.innerText = `EMAIL: ${email}`;
+        texto_texto.innerText = `TEXTO: "${text}"`;
+        document.body.appendChild(texto_nome);
+        document.body.appendChild(texto_email);
+        document.body.appendChild(texto_texto);
+        }
+    </script>
+
+<style>
+</style>
+
+</body>
+</html>

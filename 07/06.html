@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <h1>Questão 06</h1>
+
+    <div id="area"> CLIQUE AQUI </div>
+
+    <script>
+        let area = document.querySelector('body');
+        area.addEventListener('click', clicar);
+
+
+        function clicar(){
+            area.style.background = 'red';
+        }
+    </script>
+
+    <style>
+        #area {
+            color: black;
+            width: 1000px;
+            height: 900px;
+        }
+    </style>
+</body>
+</html>

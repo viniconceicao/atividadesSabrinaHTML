@@ -1,0 +1,144 @@
+body {
+    font-family: Arial;
+    background-color: #3592a5;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.nav a {
+    color: #fffefe;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background: #8dfa62;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.content h1 span {
+    color:#8dfa62;
+}
+
+.content p {
+    color: #e0dbdb;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group input {
+    padding: 15px;
+    background-color: #2e2a3a;
+    color: #ffffff;
+    border-radius: 30px;
+    border: 2px solid #333;
+}
+
+.form-group button {
+    padding: 15px 40px;
+    background-color: #66dffd;
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #8dfa62;
+}
+
+.image-container {
+    max-width: 40%;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.ellipse {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c3e2ff, transparent);
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    z-index: -1;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #8dfa62;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+#projetos {
+    display: flex;
+    position: absolute;
+    margin-top: 100%;
+}

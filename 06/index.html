@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+</head>
+
+<body>
+
+    <h1> Atividade 06 </h1>
+
+    <script>
+        // 8. Saudação personalizada.
+
+        let nome;
+
+        nome = prompt("Qual é seu nome?")
+
+        document.write(`Olá ${nome}, seja bem-vindo para minha página <br> <br>`);
+
+        //  9. Conversão de temperatura
+
+        document.write(`Conversão de temperatura: <br>`);
+        let celsius = Number(prompt("Informe o valor em celsius: "));
+
+        let fahrenheit = (celsius * 1.8) + 32;
+
+        document.write(`O valor em celsius: ${celsius}<br> O valor convertido em Fahrenheit: ${fahrenheit} <br> <br>`);
+
+        // 10. Calculadora simples
+
+        document.write(`Calculadora simples: <br>`);
+
+        let nr1 = Number(prompt("Informe o primeiro número: "));
+        let nr2 = Number(prompt("Informe o segundo número: "));
+
+        let soma;
+        soma = nr1 + nr2;
+
+        let subtracao;
+        subtracao = nr1 - nr2;
+
+        let multiplicao;
+        multiplicao = nr1 * nr2;
+
+        let divisao;
+        divisao = nr1 / nr2;
+
+        document.write(`A soma dos números ${nr1} e ${nr2} é: ${soma} <br>
+        A subtração dos números ${nr1} e ${nr2} é: ${subtracao} <br>
+        A multiplicação dos números ${nr1} e ${nr2} é: ${multiplicao} <br>
+        A divisao dos números ${nr1} e ${nr2} é: ${divisao} <br>`);
+
+    </script>
+
+</body>
+
+</html>

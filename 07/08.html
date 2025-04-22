@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 08</title>
+</head>
+<body>
+    <input type="button" name="botao_menor" id="botao_menor" value="-">
+    <input type="text" name="contador" id="contador" value="0" readonly>
+    <input type="button" name="botao_maior" id="botao_maior" value="+">
+    
+    <script>
+        let contador_input = document.querySelector('#contador');
+        let botao_menor = document.querySelector('#botao_menor');
+        let botao_maior = document.querySelector('#botao_maior');
+
+        botao_menor.addEventListener('click', menor);
+        botao_maior.addEventListener('click', maior);
+
+        function maior() {
+            let contador = Number(contador_input.value);
+            contador_input.value = contador + 1;
+        }
+
+        function menor() {
+            let contador = Number(contador_input.value);
+            contador_input.value = contador - 1;
+        }
+    </script>
+</body>
+</html>
